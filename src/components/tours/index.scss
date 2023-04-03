@@ -1,0 +1,51 @@
+@import '../../assets/variables.scss';
+
+
+.tours{
+    display: flex;
+//   gap: 8rem;
+    &-main{
+        width: 50rem;
+        h2{
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p{
+         font-size: 1.3rem;
+         font-weight: 500;
+         line-height: 2rem;
+        }
+    }
+    &-img{
+        position: relative;
+        width: 55rem;
+       &_main{
+        position: absolute;
+        width: 22rem;
+        transition: all .2s ease-out;
+        &:hover{
+            transform: scale(1.2);
+            z-index: 10;
+            border: 9px solid $color-primary-dark;
+            padding: 9px;
+        }
+       }
+    }
+    .nat1-img{
+        top: -10%;
+        left: 15%;
+    }
+    .nat2-img{
+    //    left: -10%;
+        right: 0%;
+        top: 10%;
+    }
+    .nat3-img{
+        right: 20%;
+        bottom: -10%;
+    }
+
+}
+
+

@@ -1,0 +1,40 @@
+@import '../../assets/variables.scss';
+
+.features{
+    margin-top: 9rem;
+    background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary-light, 0.8),
+				rgba($color-primary-dark, 0.8)
+			),
+			url(../../assets/img/hero.jpg);
+		background-position: top;
+		background-size: cover;
+		height: 90vh;
+       clip-path: polygon(0 16%, 100% 0%, 100% 82%, 0% 100%);
+   &-section{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     gap: 2rem;
+    //  padding: 2rem;
+     &_card{
+        background: $color-grey-light-2;
+        text-transform: uppercase;
+        padding: 2rem;
+        transition: all .2s ease-out;
+        h2{
+            // font-size: 1.2rem;
+        }
+        p{
+              text-transform: capitalize;
+              font-weight: 300;
+        }
+        &:hover{
+            transform: translateY(-10%);
+        }
+     }
+   }
+}

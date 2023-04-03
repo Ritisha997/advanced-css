@@ -1,0 +1,107 @@
+@import "../../assets/variables.scss";
+
+.home-container {
+	.section {
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($color-primary-light, 0.8),
+				rgba($color-primary-dark, 0.8)
+			),
+			url(../../assets/img/hero.jpg);
+		background-position: top;
+		background-size: cover;
+		height: 90vh;
+		clip-path: polygon(0 0, 100% 0%, 100% 82%, 0% 100%);
+		position: relative;
+	}
+	.navbar {
+		width: 100%;
+		&_logo {
+			position: absolute;
+			z-index: 1;
+			top: 4rem;
+			left: 4rem;
+		}
+	}
+	.hero {
+		&-section {
+			display: block;
+			position: absolute;
+			top: 30%;
+			left: 31%;
+			&_header {
+				//     display: block;
+				//     position: absolute;
+				//     top: 35%;
+				//     left: 35%;
+				color: $color-white;
+				&-main {
+					font-size: 4.5rem;
+					font-weight: 500;
+					letter-spacing: 2.5rem;
+					text-transform: uppercase;
+				}
+				&-sub {
+					font-size: 1.5rem;
+					font-weight: 700;
+					letter-spacing: 1.2rem;
+					text-transform: uppercase;
+					line-height: 6rem;
+				}
+			}
+			.btn-container {
+				transform: translate(28%, 100%);
+			}
+			.hero-btn {
+				text-transform: uppercase;
+				font-size: 1.3rem;
+				padding: 1rem 1.8rem;
+				position: relative;
+				border-radius: 30px;
+				border: none;
+				font-weight: 400;
+				transition: all 0.2s ease-out;
+
+				&::after {
+					     content: "";
+					       display: inline-block;
+					    position: absolute;
+					     color: rebeccapurple;
+					    top: 0%;
+					    left: 0%;
+					    width: 100%;
+					    z-index: -1;
+                             height: 100%;
+                             border-radius: 10rem;
+					
+						// content: "";
+						// display: inline-block;
+						// height: 100%;
+						// width: 100%;
+						// border-radius: 10rem;
+						// position: absolute;
+						// top: 0;
+						// left: 0;
+						// z-index: -1;
+						// transition: all 0.4s;
+                              &:hover{
+                                         transform: scale(1.2, 3);
+                                         opacity: 0;
+                              }
+					
+				}
+                    &:hover{
+                         transform: translateY(-10%);
+                         &::after:hover{
+                              // transform: scale(1.2, 3);
+                              
+                         }
+                    }
+			}
+		}
+	}
+	.below-section {
+		width: 70vw;
+		margin: auto;
+	}
+}

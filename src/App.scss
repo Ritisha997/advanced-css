@@ -1,0 +1,35 @@
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+.max-width {
+	max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  padding: 2rem;
+  font-weight: 400;
+}
+.mt-2{
+  // margin-top: 2rem;
+  margin: 2rem 0;
+}
+  p{
+         font-size: 1.3rem;
+         font-weight: 500;
+         line-height: 2rem;
+        }

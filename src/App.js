@@ -1,12 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Home from './containers/Home';
 
 function App() {
   return (
-    <div className="App">
-      hello
-    </div>
-  );
+		<>
+			<div className='max-width'>
+				<Home />
+			</div>
+		</>
+	);
 }
 
 export default App;
