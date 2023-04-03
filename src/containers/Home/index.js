@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import Tours from '../../components/tours';
 import Features from '../../components/features';
+import Stories from '../../components/stories';
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
 				{/* <div className="below-section"> */}
 					<Tours />
                     <Features/>
+					<Stories/>
 				{/* </div> */}
 			</div>
 		</>
